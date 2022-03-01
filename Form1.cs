@@ -19,7 +19,7 @@ namespace WindowsFormsApp1._0
 
         private void textButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("KKO");
+            testPictureBox.Load("C:\\Users\\radvo\\Pictures\\eu.jpg");
         }
     }
 }
