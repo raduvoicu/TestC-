@@ -19,7 +19,11 @@ namespace WindowsFormsApp1._0
 
         private void textButton_Click(object sender, EventArgs e)
         {
-            testPictureBox.Load("C:\\Users\\radvo\\Pictures\\eu.jpg");
+            //testPictureBox.Load("E:\\AN III\\SEM III\\bmp_jpeg.jpg");
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                testPictureBox.Load(openFileDialog1.FileName);
+            }
         }
     }
 }

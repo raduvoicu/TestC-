@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textButton = new System.Windows.Forms.Button();
             this.testPictureBox = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.testPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // textButton
             // 
-            this.textButton.Location = new System.Drawing.Point(318, 159);
+            this.textButton.Location = new System.Drawing.Point(12, 12);
             this.textButton.Name = "textButton";
             this.textButton.Size = new System.Drawing.Size(75, 23);
             this.textButton.TabIndex = 0;
@@ -45,12 +48,23 @@
             // 
             // testPictureBox
             // 
-            this.testPictureBox.Location = new System.Drawing.Point(217, 218);
+            this.testPictureBox.Location = new System.Drawing.Point(12, 41);
             this.testPictureBox.Name = "testPictureBox";
-            this.testPictureBox.Size = new System.Drawing.Size(306, 169);
+            this.testPictureBox.Size = new System.Drawing.Size(776, 397);
+            this.testPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.testPictureBox.TabIndex = 1;
             this.testPictureBox.TabStop = false;
             this.testPictureBox.WaitOnLoad = true;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -70,6 +84,8 @@
 
         private System.Windows.Forms.Button textButton;
         private System.Windows.Forms.PictureBox testPictureBox;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
